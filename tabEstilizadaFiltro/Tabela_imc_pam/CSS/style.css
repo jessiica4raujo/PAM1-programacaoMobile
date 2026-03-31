@@ -1,0 +1,36 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+th, td {
+    border: 2px solid #ccc;
+    text-align: center;
+    padding: 12px;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+tr:nth-child(even) {
+        background-color: #f2f2f2;
+}
+tr:hover {
+        background-color: #ddd;
+}
+
+
+/* Estilização da tabela usando classe:*/
+.abaixoDoPeso td {
+    color:red;
+    border: 2px dashed red;
+}
+
+.pesoNormal td {
+    border: 2px solid green ;
+}
+
+.outrosCasos td {
+    border: 2px solid orange;
+    background-color: #ccc;
+}
