@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body{
+    background-color: black;
+    
+}
+/* Container que junta o título (esquerda) e os botões (direita) */
+.titulo-pagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;           
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Ajustes no título */
+.titulo-pagina h1 {
+    color: white;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px; 
+}
+
+.titulo-pagina i {
+    color: #6a2387;
+    font-size: 26px;
+}
+
+.titulo-pagina p {
+    color: #a3a3a3;
+    font-size: 15px;
+    margin-top: 4px;
+}
+
+.hero{
+    width:100%;
+    height:auto;
+    margin:10px;
+}
+.conteudo {
+    margin-left: 250px;
+    padding: 30px;
+    width: calc(100% - 250px);
+}
+
+/* Espaçamento da seção de boas vindas */
+.inicio {
+    margin-bottom: 30px;
+}
+
+.inicio h2 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.inicio p {
+    color: #a3a3a3;
+}
+

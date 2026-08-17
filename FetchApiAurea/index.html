@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auréa</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/cardsUser.css">
+    <link rel="stylesheet" href="./css/botoes.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <nav>
+            <img class="logo" src="img/logoAurea.png" alt="Logo Auréa">
+
+            <a href="./index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Tela Inicial</span>
+            </a>
+
+            <a href="./usuarios/usuarios.html">
+                <i class="fa-solid fa-user"></i>
+                <span>Usuários</span>
+            </a>
+
+            <a href="./carrinhos/carrinhos.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Carrinhos</span>
+            </a>
+
+            <a href="./documentacao/documentacao.html">
+                <i class="fa-solid fa-code"></i>
+                <span>Documentação</span>
+            </a>
+
+            <img class="icon" src="img/imgCarrinho.png" alt="Carrinho">
+        </nav>
+    </aside>
+
+    <main class="conteudo">
+
+        <section class="inicio">
+            <h2>Boas-vindas! ✦</h2>
+            <p>Pronta para descobrir sua próxima peça favorita?</p>
+            <img class="hero" src="img/bannerAurea.png" alt="Banner Auréa">
+        </section>
+
+        <!-- Usuários -->
+        <div class="containerSelecao">
+            <section class="titulo-pagina">
+                <div class="texto-titulo">
+                    <h1>
+                        <i class="fa-solid fa-users"></i>
+                        Usuários
+                    </h1>
+                    <p>Lista de usuários cadastrados</p>
+                </div>
+
+                <div class="acoes-botoes">
+                    <button id="btnVerMais">Ver todos os usuários</button>
+                    <button id="btnCarregarDados">Carregar dados</button>
+                </div>
+            </section>
+
+            <div id="container-cards"></div>
+        </div>
+
+        <!-- Carrinhos -->
+        <div class="containerSelecao">
+            <section class="titulo-pagina">
+                <div class="texto-titulo">
+                    <h1>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Carrinhos
+                    </h1>
+                    <p>Lista de carrinhos ativos</p>
+                </div>
+
+                <div class="acoes-botoes">
+                    <button id="btnVerTodosCarrinhos">Ver todos os carrinhos</button>
+                    <button id="btnCarregarCarrinhos">Carregar dados</button>
+                </div>
+            </section>
+
+            <div id="container-carrinhos"></div>
+        </div>
+
+    </main>
+
+    <script src="JavaScript/amostraUsuarios.js"></script>
+    <script src="JavaScript/amostraCarrinhos.js"></script>
+
+</body>
+</html>
