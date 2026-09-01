@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cardsUser.css">
+    <link rel="stylesheet" href="../css/botoes.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/carrinho.css">
+  
+
+    <!-- Importação do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- 1. SIDEBAR FIXA NA ESQUERDA -->
+    <aside id="sidebar" class="sidebar">
+        <nav>
+            <img class="logo" src="../img/logoAurea.png" alt="Logo">
+            <a href="../index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Tela Inicial</span>
+            </a>
+
+            <a href="usuarios.html" class="ativo">
+                <i class="fa-solid fa-user"></i>
+                <span>Usuários</span>
+            </a>
+
+            <a href="../carrinhos/carrinhos.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Carrinhos</span>
+            </a>
+
+             <a href="../produtos/produtos.html">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>Produtos</span>
+            </a>
+
+            <a href="../documentacao/documentacao.html">
+                <i class="fa-solid fa-code"></i>
+                <span>Documentação</span>
+            </a>
+
+            <img class="icon" src="../img/imgCarrinho.png" alt="Carrinho Icon">
+        </nav>
+    </aside>
+
+  <main class="conteudo">
+
+        <header class="topo">
+            <div class="titulo-pagina">
+                <span>GERENCIAMENTO</span>
+                <h1>Todos os usuários</h1>
+                <p>Visualize os usuários encontrados nos sistema.</p>
+            </div>
+
+            <div class="acoes-topo">
+                <div class="pesquisa">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="pesquisa" placeholder="Pesquisar...">
+                </div>
+
+                <div class="perfil">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </header>
+
+       
+                </section>
+                 <!-- Container onde o JS vai mostrar os cards -->
+                <div id="container-cards"></div>
+            </div>
+        </section>
+    </main>
+        <script type="module" src="../JavaScript/usuarios.js"></script>
+</body>
+</html>

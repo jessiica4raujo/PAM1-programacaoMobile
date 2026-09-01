@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinhos | Auréa</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/carrinho.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <nav>
+            <img class="logo" src="../img/logoAurea.png" alt="Logo Auréa">
+
+            <a href="../index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Tela Inicial</span>
+            </a>
+
+            <a href="../usuarios/usuarios.html">
+                <i class="fa-solid fa-user"></i>
+                <span>Usuários</span>
+            </a>
+
+            <a href="carrinhos.html" class="ativo">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Carrinhos</span>
+            </a>
+
+            <a href="../produtos/produtos.html">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>Produtos</span>
+            </a>
+
+            <a href="../documentacao/documentacao.html">
+                <i class="fa-solid fa-code"></i>
+                <span>Documentação</span>
+            </a>
+
+            <img class="icon" src="../img/imgCarrinho.png" alt="Carrinho">
+        </nav>
+    </aside>
+
+    <main class="conteudo">
+
+        <header class="topo">
+            <div class="titulo-pagina">
+                <span>GERENCIAMENTO</span>
+                <h1>Todos os carrinhos</h1>
+                <p>Visualize os carrinhos realizados pelos usuários.</p>
+            </div>
+
+            <div class="acoes-topo">
+                <div class="pesquisa">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="pesquisa" placeholder="Pesquisar...">
+                </div>
+
+                <div class="perfil">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </header>
+
+        <section class="area-carrinhos">
+            <div class="cabecalho-carrinhos">
+                <h2>Carrinhos recentes</h2>
+                <p id="quantidade-carrinhos">Carregando carrinhos...</p>
+            </div>
+
+            <div id="lista-carrinhos"></div>
+        </section>
+
+    </main>
+
+    <script type="module" src="../JavaScript/carrinho.js"></script>
+
+</body>
+</html>

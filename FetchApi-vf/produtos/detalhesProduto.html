@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detalhes do Produto | Auréa</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/detalhesProduto.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <nav>
+
+            <img class="logo" src="../img/logoAurea.png" alt="Logo Auréa">
+
+            <a href="../index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Tela Inicial</span>
+            </a>
+
+            <a href="../usuarios/usuarios.html">
+                <i class="fa-solid fa-user"></i>
+                <span>Usuários</span>
+            </a>
+
+            <a href="../carrinhos/carrinhos.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Carrinhos</span>
+            </a>
+
+            <a href="produtos.html" class="ativo">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>Produtos</span>
+            </a>
+
+            <a href="../documentacao/documentacao.html">
+                <i class="fa-solid fa-code"></i>
+                <span>Documentação</span>
+            </a>
+
+            <img class="icon" src="../img/imgCarrinho.png" alt="Carrinho">
+
+        </nav>
+    </aside>
+
+    <!-- Conteúdo -->
+    <main class="conteudo">
+
+        <!-- Botão voltar -->
+        <a href="produtos.html" class="voltar">
+            <i class="fa-solid fa-arrow-left"></i>
+            Voltar para produtos
+        </a>
+
+        <!-- Aqui o JavaScript coloca o produto -->
+        <section id="detalhes-produto">
+            <p>Carregando produto...</p>
+        </section>
+
+    </main>
+
+<script type="module" src="../JavaScript/detalhesProduto.js"></script>
+</body>
+</html>

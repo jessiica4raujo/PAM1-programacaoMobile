@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação | Auréa</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/documentacao.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <nav>
+            <img class="logo" src="../img/logoAurea.png" alt="Logo">
+
+            <a href="../index.html"><i class="fa-solid fa-house"></i><span>Tela Inicial</span></a>
+            <a href="../usuarios/usuarios.html"><i class="fa-solid fa-user"></i><span>Usuários</span></a>
+            <a href="../carrinhos/carrinhos.html"><i class="fa-solid fa-cart-shopping"></i><span>Carrinhos</span></a>
+            <a href="../produtos/produtos.html"><i class="fa-solid fa-bag-shopping"></i><span>Produtos</span></a>
+            <a href="documentacao.html" class="ativo"><i class="fa-solid fa-code"></i><span>Documentação</span></a>
+
+            <img class="icon" src="../img/imgCarrinho.png" alt="Carrinho">
+        </nav>
+    </aside>
+
+    <main class="conteudo documentacao">
+        <header>
+            <h1>DOCUMENTAÇÃO</h1>
+            <p>Conheça as tecnologias utilizadas no projeto Auréa.</p>
+        </header>
+
+        <section>
+            <h2>Tecnologias utilizadas:</h2>
+
+            <div class="tecnologias">
+                <div class="tech-card">
+                    <img src="../img/simbolo-html.png" alt="HTML">
+                    <h3>HTML</h3>
+                    <p>Responsável pela estrutura e organização das páginas.</p>
+                </div>
+
+                <div class="tech-card">
+                    <img src="../img/simbolo-css.png" alt="CSS">
+                    <h3>CSS</h3>
+                    <p>Utilizado para criar o estilo e o visual do projeto.</p>
+                </div>
+
+                <div class="tech-card">
+                    <img src="../img/simbolo-js.png" alt="JavaScript">
+                    <h3>JavaScript</h3>
+                    <p>Responsável pelas interações e funcionamento do site.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="dados">
+            <h2>Como os dados chegam ao site?</h2>
+
+            <div class="fluxo">
+                <div><i class="fa-solid fa-cloud"></i><b>Fake Store API</b></div>
+                <i class="fa-solid fa-arrow-right"></i>
+                <div><i class="fa-solid fa-arrows-rotate"></i><b>Fetch</b></div>
+                <i class="fa-solid fa-arrow-right"></i>
+                <div><i class="fa-solid fa-code"></i><b>JSON</b></div>
+                <i class="fa-solid fa-arrow-right"></i>
+                <div><i class="fa-solid fa-display"></i><b>Auréa</b></div>
+            </div>
+
+            <p>O <b>Fetch</b> busca os dados da Fake Store API. Os dados chegam em <b>JSON</b> e o JavaScript usa essas informações para mostrar usuários, carrinhos e produtos no site.</p>
+        </section>
+
+        <section class="criadoras">
+            <h2>Criadoras do projeto:</h2>
+
+            <div class="perfis">
+                <div>
+                    <img src="../img/foto-min.png" alt="Yasmin">
+                    <h3>Yasmin Rodrigues.</h3>
+                    <p>Responsável pela página de carrinhos e pelo design do projeto.</p>
+                </div>
+
+                <div>
+                    <img src="../img/jessy-foto.png" alt="Jéssica">
+                    <h3>Jéssica Araújo.</h3>
+                    <p>Responsável pela página de usuários e funcionalidades do projeto.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

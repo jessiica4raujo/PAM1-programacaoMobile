@@ -1,0 +1,95 @@
+/* Ajuste no containerSelecao para ocupar bem o espaço */
+.containerSelecao {
+    width: 100%; /* Muda de 80% para 100% já que o .conteudo limita a tela */
+    height: auto;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+#container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Ajuste na estrutura dos cards */
+.card {
+    border: 1px solid #333333; /* Borda mais discreta */
+    border-radius: 12px;
+    padding: 16px;
+    width: 220px; /* Largura levemente ajustada */
+    background-color: #121212; /* Tom escuro leve em vez de preto puro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 13px; /* Tamanho de texto legível */
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    border-color: #6a2387; /* Efeito roxo ao passar o mouse */
+}
+
+/* Ajuste no título do card (diminuído de 2rem para 16px) */
+.card h3 {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: white;
+    font-size: 16px; /* Tamanho proporcional */
+    font-weight: 600;
+}
+
+/* Container oculto por padrão */
+.detalhes-ocultos {
+    display: none; /* Esconde as informações extras */
+    margin-top: 10px;
+    font-size: 12px;
+    color: #cccccc;
+    text-align: left;
+}
+
+/* Quando ganha a classe .ativo, ele é exibido */
+.detalhes-ocultos.ativo {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.detalhes-ocultos p {
+    margin-bottom: 6px;
+}
+
+.linha-card {
+    border: 0;
+    height: 1px;
+    background: #333333;
+    margin: 10px 0;
+}
+
+#container-carrinhos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.card-carrinho .card-header i {
+    color: #6a2387;
+}
+
+.card-carrinho .card-body p {
+    margin-bottom: 8px;
+}
+
+.foto-perfil {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #6a2387;
+    margin-bottom: 8px;
+}
