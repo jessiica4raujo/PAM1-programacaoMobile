@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+/* BACKGROUND */
+body{
+    min-height:100vh;
+    background-image:url("../Img/backgrounds/bckReq2.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+}
+
+/* INTRO */
+.secaoIntro{
+    width:30%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+
+.personagens{
+    width:80%;
+    min-width:220px;
+    height:auto;
+    transition: 0.3s ease-in-out;
+}
+ 
+/* efeito de hover */
+.personagens:hover{
+    transform: scale(1.05);
+}
+
+/* CARD LOGIN (estilo quiz-box) */
+.login-box{
+    width:50%;
+    justify-content: center;
+    height:auto;
+    min-width:450px;
+    min-height:500px;
+    padding:30px;
+    border-radius:30px;
+    background:rgba(255,255,255,0.55);
+    backdrop-filter:blur(2px);
+    -webkit-backdrop-filter:blur(2px);
+    margin:auto 100px;
+    display:flex;
+    flex-direction:column;
+}
+
+/* TÍTULO DO CARD */
+.login-box h1{
+    font-size:3rem;
+    font-family: 'Bebas Neue';
+    text-align: center;
+    color:#633c94;
+}
+
+/* SUBTÍTULO */
+.login-box h2{
+    padding:10px 0;
+    color:#633c94;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family:"Poppins";
+    text-align: center;
+
+}
+
+.inputTexto{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.inputBox{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:10px;
+    border:2px solid #68a5e9;
+    border-radius:40px;
+    background:white;
+}
+
+.inputBox input{
+    border:none;
+    outline:none;
+    width:100%;
+    font-family:'Poppins';
+}
+
+.icon{
+    width:40px;
+    height:auto;
+    transition: 0.3s ease-in-out;
+    
+}
+.icon:hover{
+    transform: scale(1.05);
+}
+
+/* SELECTS */
+.nacionalidade{
+    display:flex;
+    gap:10px;
+   justify-content: center;
+    align-items: center;
+}
+
+.nacionalidade .selects{
+    display:flex;
+}
+
+select{
+    width:40%;
+    padding:10px;
+    border-radius:20px;
+    border:2px solid #68a5e9;
+    font-family:'Poppins';
+    
+}
+
+/* RADIO */
+.div_sexo{
+    display:flex;
+    gap:15px;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.sexo{
+    display:flex;
+    align-items:center;
+    gap:7px;
+}
+
+.sexo span{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color:#868686;
+    font-family:'Poppins';
+}
+
+/* BOTÃO*/
+#confirmarBtn{
+    font-weight:500;
+    width:100%;
+    cursor:pointer;
+    transition:all 0.3s ease;
+    margin-top:10px;
+    width:100%; 
+    height:auto; 
+    padding:10px; 
+    border:2px solid transparent; 
+    border-radius: 20px; 
+    background: linear-gradient(to left,#68a5e9, #9a73e9); 
+    backdrop-filter: blur(2px); -webkit-backdrop-filter: blur(2px); 
+    color:white; 
+    font-family:'Poppins';
+}
+
+#confirmarBtn:hover{
+    background:purple;
+    color:#fff;
+}
+
+input{
+    transition: 0.3s ease-in-out;
+}
+
+input:hover{
+    transform: scale(1.05);
+}
+
+.btn{
+    width:150px;
+    height:auto;
+    color:white;
+    background-color:transparent;
+    border:transparent;
+    margin-top:10px;
+}

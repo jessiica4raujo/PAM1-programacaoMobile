@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../Css/login.css">
+</head>
+<body>
+
+    <section class="secaoIntro">
+        <img src="../Img/logos/quizLogo.png" alt="Logo Quiz" class="logo">
+        <h2>Desafie seu conhecimento!</h2>
+        <h1>BEM-VINDO!</h1>
+        <h3>
+            Se ainda não fez sua ficha de cadastro,
+            <br>
+            realize ao lado!
+        </h3>
+        <img src="../Img/IconPersonagens/ToyStory.png" alt="Personagens" class="personagens">
+    </section>
+
+    <form class="login-box">
+        <h1>LOGIN</h1>
+ <div class="inputTexto">
+
+    <div class="inputBox">
+        <img src="../Img/icons/userColorido.png" class="icon">
+        <input type="text" placeholder="Digite seu nome..." id="nomeId" required>
+    </div>
+
+    <div class="inputBox">
+        <img src="../Img/icons/email.png" class="icon">
+        <input type="email" placeholder="Digite seu e-mail..." id="emailId" required>
+    </div>
+
+    <div class="inputBox">
+        <img src="../Img/icons/aniversario.png" class="icon">
+        <input type="number" placeholder="Digite sua idade..." id="idadeId" min="1" max="100" required>
+    </div>
+
+</div>
+
+
+        <h2>Selecione seu País e Estado</h2>
+        <div class="nacionalidade">
+            <select name="pais" id="paisId">
+                <option value="BR">Brasil</option>
+                <option value="AR">Argentina</option>
+                <option value="US">Estados Unidos</option>
+                <option value="PT">Portugal</option>
+            </select>
+
+            <select name="estado" id="estadoId">
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+                <option value="MG">MG</option>
+                <option value="ES">ES</option>
+                <option value="PR">PR</option>
+                <option value="SC">SC</option>
+                <option value="RS">RS</option>
+                <option value="BA">BA</option>
+                <option value="PE">PE</option>
+                <option value="AM">AM</option>
+            </select>
+        </div>
+        <h2>Selecione seu Sexo </h2>
+
+        <div class="div_sexo">
+            <label class="sexo">
+                <input type="radio" name="sexo" value="MASC">
+                <span>Masculino</span>
+            </label>
+
+            <label class="sexo">
+                <input type="radio" name="sexo" value="FEM">
+                <span>Feminino</span>
+            </label>
+
+            <label class="sexo">
+                <input type="radio" name="sexo" value="OUTROS">
+                <span>Outros</span>
+            </label>
+        </div>
+
+        <button type="submit" id="confirmarBtn">
+            Confirmar
+        </button>
+
+    </form>
+<script src="../JavaScript/login.js"></script>
+</body>
+</html>
+

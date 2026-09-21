@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    height: 100vh;
+    background-image: url(../Img/backgrounds/fundo-inicial.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+
+}
+
+
+.container {
+    text-align: center;
+    animation: entrada 1s ease;
+}
+
+.logo {
+    width: 300px;
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+.loader {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+
+.loader span {
+    width: 18px;
+    height: 18px;
+    background: #b46cff;
+    border-radius: 50%;
+    animation: pular 1s infinite;
+}
+
+
+.loader span:nth-child(2) {
+    animation-delay: .2s;
+}
+
+
+.loader span:nth-child(3) {
+    animation-delay: .4s;
+}
+
+@keyframes pular {
+    0%,
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+
+    50% {
+
+        transform: translateY(-15px);
+
+    }
+
+
+}
+
+
+
+h2 {
+    margin-top: 25px;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+@keyframes flutuar {
+    50% {
+
+        transform: translateY(-10px);
+
+    }
+
+
+}
+
+
+
+@keyframes entrada {
+
+
+    from {
+
+        opacity: 0;
+
+        transform: scale(.8);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+
+}

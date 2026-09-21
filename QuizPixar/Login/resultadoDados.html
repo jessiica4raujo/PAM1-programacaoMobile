@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado dos Dados</title>
+    <link rel="stylesheet" href="../Css/resultadoDados.css">
+</head>
+<body>
+
+    <div class="login-box">
+        <h1>Dados Cadastrados</h1>
+        
+        <div class="inputTexto">
+            
+            <div class="inputBox">
+                <img src="../Img/icons/userColorido.png" class="icon">
+                <p><strong>Nome:</strong> <span id="resNome">---</span></p>
+            </div>
+
+            <div class="inputBox">
+                <img src="../Img/icons/email.png" class="icon">
+                <p><strong>E-mail:</strong> <span id="resEmail">---</span></p>
+            </div>
+
+            <div class="inputBox">
+                <img src="../Img/icons/aniversario.png" class="icon">
+                <p><strong>Idade:</strong> <span id="resIdade">---</span> anos</p>
+            </div>
+
+            <div class="inputBox">
+                <img src="../Img/icons/userColorido.png" class="icon"> <p><strong>País:</strong> <span id="resPais">---</span></p>
+            </div>
+
+            <div class="inputBox">
+                <img src="../Img/icons/userColorido.png" class="icon"> <p><strong>Estado:</strong> <span id="resEstado">---</span></p>
+            </div>
+      
+            <div class="inputBox">
+                <img src="../Img/icons/userColorido.png" class="icon"> <p><strong>Sexo:</strong> <span id="resSexo">---</span></p>
+            </div>
+
+        </div>
+
+        <button type="button" id="confirmarBtn" onclick="location.href='../index.html'">
+            Ir para o Quiz
+        </button>
+
+        <button type="button" class="btn" id="btn-imprimir">
+            <img src="../Img/icons/userColorido.png" class="icon" style="width:10px;"> Imprimir Dados
+        </button>
+    </div>
+
+    <script src="../JavaScript/carregadarDados.js"></script>
+</body>
+</html>
